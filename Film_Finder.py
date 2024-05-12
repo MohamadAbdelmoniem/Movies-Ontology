@@ -7,8 +7,8 @@ from tkinter import ttk, scrolledtext
 g = rdflib.Graph()
 
 # Define and bind your namespace
-YOUR_NS = Namespace("http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#")
-g.namespace_manager.bind('your_ns', YOUR_NS, override=False)
+namespace = Namespace("http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#")
+g.namespace_manager.bind('ns', namespace, override=False)
 
 try:
     g.parse("Movies.ttl", format="turtle")
@@ -27,20 +27,20 @@ def query_films(include_actors=None, exclude_actors=None, include_directors=None
     # Construct the SPARQL query
     query_parts = [
         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
-        "PREFIX your_ns: <http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#>",
+        "PREFIX ns: <http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#>",
         "SELECT DISTINCT ?filmTitle WHERE {",
-        "    ?film rdf:type your_ns:Movie;",
-        "          your_ns:hasTitle ?filmTitle."
+        "    ?film rdf:type ns:Movie;",
+        "          ns:hasTitle ?filmTitle."
     ]
     
     # Adding OPTIONAL clauses to bind properties only if needed
     optional_parts = []
     if include_actors or exclude_actors:
-        optional_parts.append("?film your_ns:hasActor ?actor. ?actor your_ns:hasName ?actorName.")
+        optional_parts.append("?film ns:hasActor ?actor. ?actor ns:hasName ?actorName.")
     if include_directors or exclude_directors:
-        optional_parts.append("?film your_ns:hasDirector ?director. ?director your_ns:hasName ?directorName.")
+        optional_parts.append("?film ns:hasDirector ?director. ?director ns:hasName ?directorName.")
     if include_genres or exclude_genres:
-        optional_parts.append("?film your_ns:hasGenre ?genre. ?genre your_ns:genreName ?genreName.")
+        optional_parts.append("?film ns:hasGenre ?genre. ?genre ns:genreName ?genreName.")
     
     # Join optional parts into the query
     if optional_parts:
@@ -53,19 +53,19 @@ def query_films(include_actors=None, exclude_actors=None, include_directors=None
         filters.append(f"?actorName IN ({included_actors_list})")
     if exclude_actors:
         excluded_actors_list = ','.join(f'"{x}"' for x in exclude_actors)
-        filters.append(f"NOT EXISTS {{ ?film your_ns:hasActor ?exActor. ?exActor your_ns:hasName ?exActorName. FILTER (?exActorName IN ({excluded_actors_list})) }}")
+        filters.append(f"NOT EXISTS {{ ?film ns:hasActor ?exActor. ?exActor ns:hasName ?exActorName. FILTER (?exActorName IN ({excluded_actors_list})) }}")
     if include_directors:
         included_directors_list = ','.join(f'"{x}"' for x in include_directors)
         filters.append(f"?directorName IN ({included_directors_list})")
     if exclude_directors:
         excluded_directors_list = ','.join(f'"{x}"' for x in exclude_directors)
-        filters.append(f"NOT EXISTS {{ ?film your_ns:hasDirector ?exDirector. ?exDirector your_ns:hasName ?exDirectorName. FILTER (?exDirectorName IN ({excluded_directors_list})) }}")
+        filters.append(f"NOT EXISTS {{ ?film ns:hasDirector ?exDirector. ?exDirector ns:hasName ?exDirectorName. FILTER (?exDirectorName IN ({excluded_directors_list})) }}")
     if include_genres:
         included_genres_list = ','.join(f'"{x}"' for x in include_genres)
         filters.append(f"?genreName IN ({included_genres_list})")
     if exclude_genres:
         excluded_genres_list = ','.join(f'"{x}"' for x in exclude_genres)
-        filters.append(f"NOT EXISTS {{ ?film your_ns:hasGenre ?exGenre. ?exGenre your_ns:genreName ?exGenreName. FILTER (?exGenreName IN ({excluded_genres_list})) }}")
+        filters.append(f"NOT EXISTS {{ ?film ns:hasGenre ?exGenre. ?exGenre ns:genreName ?exGenreName. FILTER (?exGenreName IN ({excluded_genres_list})) }}")
     
     # Applying filters
     if filters:
