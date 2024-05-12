@@ -1,0 +1,2492 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-4" IRI="http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#"/>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWriter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isActorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDirectorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWriterOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNationality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adel_Emam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comedy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Edward"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eshtebak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hany_Adel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hepta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mohamed_Sadeq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Photocopy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tara_Emad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thriller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Youssra"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Actor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isActorOf"/>
+            <Class IRI="#Movie"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Director"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isDirectorOf"/>
+            <Class IRI="#Movie"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasActor"/>
+            <Class IRI="#Actor"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasDirector"/>
+            <Class IRI="#Director"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class IRI="#Genre"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasWriter"/>
+            <Class IRI="#Writer"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasCountry"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasLanguage"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Movie"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasYear"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasNationality"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasGender"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Writer"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isWriterOf"/>
+            <Class IRI="#Movie"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Action"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Adel_Emam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Comedy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Crime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Edward"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Hany_Adel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Mohamed_Sadeq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Photocopy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Tara_Emad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Thriller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Youssra"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Adel_Emam"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <NamedIndividual IRI="#Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <NamedIndividual IRI="#Edward"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <NamedIndividual IRI="#Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Edward"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <NamedIndividual IRI="#Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <NamedIndividual IRI="#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <NamedIndividual IRI="#Hany_Adel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <NamedIndividual IRI="#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+        <NamedIndividual IRI="#Photocopy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Hany_Adel"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+        <NamedIndividual IRI="#Photocopy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Mohamed_Sadeq"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <NamedIndividual IRI="#Adel_Emam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <NamedIndividual IRI="#Youssra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+        <NamedIndividual IRI="#Photocopy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+        <NamedIndividual IRI="#Photocopy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Tara_Emad"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <NamedIndividual IRI="#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <NamedIndividual IRI="#Tara_Emad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <NamedIndividual IRI="#Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+        <NamedIndividual IRI="#Hepta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isActorOf"/>
+        <NamedIndividual IRI="#Youssra"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+        <Literal>Abdel Rahim Kamal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Abdel_Rahim_Kamal"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+        <Literal>Abdelrahman Yasser</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Abdelrahman_Yasser"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Adel_Emam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">83</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Adel_Emam"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Adel_Emam"/>
+        <Literal>Adel Emam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Adel_Emam"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+        <Literal>Ahmed Dawood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Ahmed_Dawood"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">51</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+        <Literal>Ahmed El Sakka</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Ahmed_El_Sakka"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+        <Literal>Ahmed Helmy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Ahmed_Helmy"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+        <Literal>Ahmed Malek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Ahmed_Malek"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">72</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+        <Literal>Ahmed Mourad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Ahmed_Mourad"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+        <Literal>Aimi Samir Ghanem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Aimi_Samir_Ghanem"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+        <Literal>Akram Hosny</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Akram_Hosny"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">74</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+        <Literal>Alaa Al-Aswany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Alaa_Al-Aswany"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+        <Literal>Amina Khalil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Amina_Khalil"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+        <Literal>Amr Youssef</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Amr_Youssef"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <Literal>Asef ala el-Izag</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Asef_ala_el-Izag"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <Literal>Assal Eswed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Assal_Eswed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+        <Literal>Aser Yassin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Asser_Yassin"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">62</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+        <Literal>Ayman Bahgat Kamar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Ayman_Bahgat_Kamar"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Edward"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Edward"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Edward"/>
+        <Literal>Edward</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Edward"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <Literal>El-Badlah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#El-Badlah"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <Literal>El-Gezirah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#El-Gezirah"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <Literal>El-Kanz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#El-Kanz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <Literal>Eshtebak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Eshtebak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">73</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+        <Literal>Fares Bakr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Fares_Bakr"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">71</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+        <Literal>Hadi El Bagoury</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Hadi_El_Bagoury"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">68</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+        <Literal>Haitham Dabbour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Haitham_Dabbour"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Hany_Adel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">51</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Hany_Adel"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Hany_Adel"/>
+        <Literal>Hany Adel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Hany_Adel"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <Literal>Hepta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Hepta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+        <Literal>Hind Sabri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Hind_Sabri"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">49</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+        <Literal>Karim Abdel Aziz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Karim_Abdel_Aziz"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+        <Literal>Khaled Diab</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Khaled_Diab"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+        <Literal>Khaled El Sawi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Khaled_El-Sawi"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+        <Literal>Khaled Marei</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Khaled_Marei"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+        <Literal>Mahmoud Hemida</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Mahmoud_Hemida"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+        <Literal>Mahmoud Yassine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Mahmoud_Yassine"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+        <Literal>Marwan Hamed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Marwan_Hamed"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+        <Literal>Menna Shalaby</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Menna_Shalaby"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+        <Literal>Mohamed Ramdan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Mohamad_Ramdan"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+        <Literal>Mohamed Diab</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Mohamed_Diab"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+        <Literal>Mohamed Gamal El Adl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Mohamed_Gamal_El-Adl"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Mohamed_Sadeq"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Mohamed_Sadeq"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Mohamed_Sadeq"/>
+        <Literal>Mohamed Sadeq</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Mohamed_Sadeq"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+        <Literal>Nili Karim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Nilli_Karim"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+        <Literal>Nour El-Sherif</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Nour_El-Sherif"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <Literal>Omaret yakobean</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Omaret_yakobean"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <Literal>Photocopy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Photocopy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+        <Literal>Shereen Reda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Shereen_Reda"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <Literal>Sherif Arafa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Sherif_Arafa"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">78</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+        <Literal>Tamer Ashry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Tamer_Ashry"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">48</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+        <Literal>Tamer Hosny</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Tamer_Hosny"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Tara_Emad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Tara_Emad"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Tara_Emad"/>
+        <Literal>Tara Emad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Tara_Emad"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <Literal>The Blue Elephant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#The_Blue_Elephant"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCountry"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <Literal>Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <Literal>Turab el-Mas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Turab_el-Mas"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+        <Literal>Wael Hamdy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Wael_Hamdy"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">72</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+        <Literal>Wahid Hamed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Wahid_Hamed"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Youssra"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">73</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#Youssra"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Youssra"/>
+        <Literal>Youssra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Youssra"/>
+        <Literal>Egyptian</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasActor"/>
+        <ObjectProperty IRI="#isActorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDirector"/>
+        <ObjectProperty IRI="#isDirectorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasWriter"/>
+        <ObjectProperty IRI="#isWriterOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWriter"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isActorOf"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <Class IRI="#Writer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWriter"/>
+        <Class IRI="#Writer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isActorOf"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWriterOf"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCountry"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGender"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLanguage"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNationality"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYear"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCountry"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLanguage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNationality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Movie</IRI>
+        <Literal xml:lang="en">hasActor: Associates a movie with one or more actors.
+hasDirector: Associates a movie with one or more directors.
+hasWriter: Associates a movie with one or more writers.
+hasGenre: Specifies the genre(s) of a movie.
+hasTitle: The title of the movie.
+hasCountry: The country where the movie was produced.
+hasLanguage: The primary language spoken in the movie.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

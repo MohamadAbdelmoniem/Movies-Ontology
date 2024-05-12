@@ -1,0 +1,881 @@
+@prefix : <http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix untitled-ontology-4: <http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#> .
+@base <http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4/> .
+
+<http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasActor
+untitled-ontology-4:hasActor rdf:type owl:ObjectProperty ;
+                             owl:inverseOf untitled-ontology-4:isActorOf ;
+                             rdfs:domain untitled-ontology-4:Movie ;
+                             rdfs:range untitled-ontology-4:Actor .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasDirector
+untitled-ontology-4:hasDirector rdf:type owl:ObjectProperty ;
+                                owl:inverseOf untitled-ontology-4:isDirectorOf ;
+                                rdfs:domain untitled-ontology-4:Movie ;
+                                rdfs:range untitled-ontology-4:Director .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasGenre
+untitled-ontology-4:hasGenre rdf:type owl:ObjectProperty ;
+                             rdfs:domain untitled-ontology-4:Movie ;
+                             rdfs:range untitled-ontology-4:Genre .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasWriter
+untitled-ontology-4:hasWriter rdf:type owl:ObjectProperty ;
+                              owl:inverseOf untitled-ontology-4:isWriterOf ;
+                              rdfs:domain untitled-ontology-4:Movie ;
+                              rdfs:range untitled-ontology-4:Writer .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#isActorOf
+untitled-ontology-4:isActorOf rdf:type owl:ObjectProperty ;
+                              rdfs:domain untitled-ontology-4:Actor ;
+                              rdfs:range untitled-ontology-4:Movie .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#isDirectorOf
+untitled-ontology-4:isDirectorOf rdf:type owl:ObjectProperty ;
+                                 rdfs:domain untitled-ontology-4:Director ;
+                                 rdfs:range untitled-ontology-4:Movie .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#isWriterOf
+untitled-ontology-4:isWriterOf rdf:type owl:ObjectProperty ;
+                               rdfs:domain untitled-ontology-4:Writer ;
+                               rdfs:range untitled-ontology-4:Movie .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#genreName
+untitled-ontology-4:genreName rdf:type owl:DatatypeProperty ;
+                              rdfs:domain untitled-ontology-4:Genre ;
+                              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasAge
+untitled-ontology-4:hasAge rdf:type owl:DatatypeProperty ;
+                           rdfs:domain untitled-ontology-4:Person ;
+                           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasCountry
+untitled-ontology-4:hasCountry rdf:type owl:DatatypeProperty ;
+                               rdfs:domain untitled-ontology-4:Movie ;
+                               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasGender
+untitled-ontology-4:hasGender rdf:type owl:DatatypeProperty ;
+                              rdfs:domain untitled-ontology-4:Person ;
+                              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasLanguage
+untitled-ontology-4:hasLanguage rdf:type owl:DatatypeProperty ;
+                                rdfs:domain untitled-ontology-4:Movie ;
+                                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasName
+untitled-ontology-4:hasName rdf:type owl:DatatypeProperty ;
+                            rdfs:domain untitled-ontology-4:Person ;
+                            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasNationality
+untitled-ontology-4:hasNationality rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain untitled-ontology-4:Person ;
+                                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasTitle
+untitled-ontology-4:hasTitle rdf:type owl:DatatypeProperty ;
+                             rdfs:domain untitled-ontology-4:Movie ;
+                             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#hasYear
+untitled-ontology-4:hasYear rdf:type owl:DatatypeProperty ;
+                            rdfs:domain untitled-ontology-4:Movie ;
+                            rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Actor
+untitled-ontology-4:Actor rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:isActorOf ;
+                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass untitled-ontology-4:Movie
+                                              ] ;
+                          rdfs:subClassOf untitled-ontology-4:Person .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Director
+untitled-ontology-4:Director rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                   owl:onProperty untitled-ontology-4:isDirectorOf ;
+                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onClass untitled-ontology-4:Movie
+                                                 ] ;
+                             rdfs:subClassOf untitled-ontology-4:Person .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Genre
+untitled-ontology-4:Genre rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Movie
+untitled-ontology-4:Movie rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasActor ;
+                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass untitled-ontology-4:Actor
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasDirector ;
+                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass untitled-ontology-4:Director
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasGenre ;
+                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass untitled-ontology-4:Genre
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasWriter ;
+                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass untitled-ontology-4:Writer
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasCountry ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasLanguage ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasTitle ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty untitled-ontology-4:hasYear ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:int
+                                              ] ;
+                          rdfs:comment """hasActor: Associates a movie with one or more actors.
+hasDirector: Associates a movie with one or more directors.
+hasWriter: Associates a movie with one or more writers.
+hasGenre: Specifies the genre(s) of a movie.
+hasTitle: The title of the movie.
+hasCountry: The country where the movie was produced.
+hasLanguage: The primary language spoken in the movie."""@en .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Person
+untitled-ontology-4:Person rdf:type owl:Class ;
+                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-4:hasNationality ;
+                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-4:hasGender ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-4:hasName ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ] .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Writer
+untitled-ontology-4:Writer rdf:type owl:Class ;
+                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                 owl:onProperty untitled-ontology-4:isWriterOf ;
+                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass untitled-ontology-4:Movie
+                                               ] ;
+                           rdfs:subClassOf untitled-ontology-4:Person .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Abdel_Rahim_Kamal
+untitled-ontology-4:Abdel_Rahim_Kamal rdf:type owl:NamedIndividual ,
+                                               untitled-ontology-4:Writer ;
+                                      untitled-ontology-4:isWriterOf untitled-ontology-4:El-Kanz ;
+                                      untitled-ontology-4:hasAge 52 ;
+                                      untitled-ontology-4:hasGender "Male" ;
+                                      untitled-ontology-4:hasName "Abdel Rahim Kamal" ;
+                                      untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Abdelrahman_Yasser
+untitled-ontology-4:Abdelrahman_Yasser rdf:type owl:NamedIndividual ,
+                                                untitled-ontology-4:Writer ;
+                                       untitled-ontology-4:isWriterOf untitled-ontology-4:Hepta ;
+                                       untitled-ontology-4:hasAge 25 ;
+                                       untitled-ontology-4:hasGender "Male" ;
+                                       untitled-ontology-4:hasName "Abdelrahman Yasser" ;
+                                       untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Action
+untitled-ontology-4:Action rdf:type owl:NamedIndividual ,
+                                    untitled-ontology-4:Genre ;
+                           untitled-ontology-4:genreName "Action" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Adel_Emam
+untitled-ontology-4:Adel_Emam rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-4:Actor ;
+                              untitled-ontology-4:isActorOf untitled-ontology-4:Omaret_yakobean ;
+                              untitled-ontology-4:hasAge 83 ;
+                              untitled-ontology-4:hasGender "Male" ;
+                              untitled-ontology-4:hasName "Adel Emam" ;
+                              untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Ahmed_Dawood
+untitled-ontology-4:Ahmed_Dawood rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Actor ;
+                                 untitled-ontology-4:isActorOf untitled-ontology-4:Hepta ;
+                                 untitled-ontology-4:hasAge 41 ;
+                                 untitled-ontology-4:hasGender "Male" ;
+                                 untitled-ontology-4:hasName "Ahmed Dawood" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Ahmed_El_Sakka
+untitled-ontology-4:Ahmed_El_Sakka rdf:type owl:NamedIndividual ,
+                                            untitled-ontology-4:Actor ;
+                                   untitled-ontology-4:isActorOf untitled-ontology-4:El-Gezirah ;
+                                   untitled-ontology-4:hasAge 51 ;
+                                   untitled-ontology-4:hasGender "Male" ;
+                                   untitled-ontology-4:hasName "Ahmed El Sakka" ;
+                                   untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Ahmed_Helmy
+untitled-ontology-4:Ahmed_Helmy rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Actor ;
+                                untitled-ontology-4:isActorOf untitled-ontology-4:Asef_ala_el-Izag ,
+                                                              untitled-ontology-4:Assal_Eswed ;
+                                untitled-ontology-4:hasAge 54 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Ahmed Helmy" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Ahmed_Malek
+untitled-ontology-4:Ahmed_Malek rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Actor ;
+                                untitled-ontology-4:isActorOf untitled-ontology-4:Hepta ;
+                                untitled-ontology-4:hasAge 28 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Ahmed Malek" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Ahmed_Mourad
+untitled-ontology-4:Ahmed_Mourad rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Writer ;
+                                 untitled-ontology-4:isWriterOf untitled-ontology-4:The_Blue_Elephant ,
+                                                                untitled-ontology-4:Turab_el-Mas ;
+                                 untitled-ontology-4:hasAge 72 ;
+                                 untitled-ontology-4:hasGender "Male" ;
+                                 untitled-ontology-4:hasName "Ahmed Mourad" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Aimi_Samir_Ghanem
+untitled-ontology-4:Aimi_Samir_Ghanem rdf:type owl:NamedIndividual ,
+                                               untitled-ontology-4:Actor ;
+                                      untitled-ontology-4:isActorOf untitled-ontology-4:Assal_Eswed ;
+                                      untitled-ontology-4:hasAge 42 ;
+                                      untitled-ontology-4:hasGender "Female" ;
+                                      untitled-ontology-4:hasName "Aimi Samir Ghanem" ;
+                                      untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Akram_Hosny
+untitled-ontology-4:Akram_Hosny rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Actor ;
+                                untitled-ontology-4:isActorOf untitled-ontology-4:El-Badlah ;
+                                untitled-ontology-4:hasAge 41 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Akram Hosny" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Alaa_Al-Aswany
+untitled-ontology-4:Alaa_Al-Aswany rdf:type owl:NamedIndividual ,
+                                            untitled-ontology-4:Writer ;
+                                   untitled-ontology-4:isWriterOf untitled-ontology-4:Omaret_yakobean ;
+                                   untitled-ontology-4:hasAge 74 ;
+                                   untitled-ontology-4:hasGender "Male" ;
+                                   untitled-ontology-4:hasName "Alaa Al-Aswany" ;
+                                   untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Amina_Khalil
+untitled-ontology-4:Amina_Khalil rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Actor ;
+                                 untitled-ontology-4:isActorOf untitled-ontology-4:El-Badlah ,
+                                                               untitled-ontology-4:El-Kanz ;
+                                 untitled-ontology-4:hasAge 30 ;
+                                 untitled-ontology-4:hasGender "Female" ;
+                                 untitled-ontology-4:hasName "Amina Khalil" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Amr_Youssef
+untitled-ontology-4:Amr_Youssef rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Actor ;
+                                untitled-ontology-4:isActorOf untitled-ontology-4:Hepta ;
+                                untitled-ontology-4:hasAge 42 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Amr Youssef" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Asef_ala_el-Izag
+untitled-ontology-4:Asef_ala_el-Izag rdf:type owl:NamedIndividual ,
+                                              untitled-ontology-4:Movie ;
+                                     untitled-ontology-4:hasActor untitled-ontology-4:Ahmed_Helmy ,
+                                                                  untitled-ontology-4:Fares_Bakr ,
+                                                                  untitled-ontology-4:Menna_Shalaby ;
+                                     untitled-ontology-4:hasDirector untitled-ontology-4:Khaled_Marei ;
+                                     untitled-ontology-4:hasGenre untitled-ontology-4:Comedy ,
+                                                                  untitled-ontology-4:Drama ;
+                                     untitled-ontology-4:hasWriter untitled-ontology-4:Ayman_Bahgat_Kamar ;
+                                     untitled-ontology-4:hasCountry "Egypt" ;
+                                     untitled-ontology-4:hasLanguage "Arabic" ;
+                                     untitled-ontology-4:hasTitle "Asef ala el-Izag" ;
+                                     untitled-ontology-4:hasYear 2008 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Assal_Eswed
+untitled-ontology-4:Assal_Eswed rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Movie ;
+                                untitled-ontology-4:hasActor untitled-ontology-4:Ahmed_Helmy ,
+                                                             untitled-ontology-4:Aimi_Samir_Ghanem ,
+                                                             untitled-ontology-4:Edward ;
+                                untitled-ontology-4:hasDirector untitled-ontology-4:Khaled_Marei ;
+                                untitled-ontology-4:hasGenre untitled-ontology-4:Comedy ,
+                                                             untitled-ontology-4:Drama ;
+                                untitled-ontology-4:hasWriter untitled-ontology-4:Khaled_Diab ;
+                                untitled-ontology-4:hasCountry "Egypt" ;
+                                untitled-ontology-4:hasLanguage "Arabic" ;
+                                untitled-ontology-4:hasTitle "Assal Eswed" ;
+                                untitled-ontology-4:hasYear 2009 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Asser_Yassin
+untitled-ontology-4:Asser_Yassin rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Actor ;
+                                 untitled-ontology-4:isActorOf untitled-ontology-4:Turab_el-Mas ;
+                                 untitled-ontology-4:hasAge 45 ;
+                                 untitled-ontology-4:hasGender "Male" ;
+                                 untitled-ontology-4:hasName "Aser Yassin" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Ayman_Bahgat_Kamar
+untitled-ontology-4:Ayman_Bahgat_Kamar rdf:type owl:NamedIndividual ,
+                                                untitled-ontology-4:Writer ;
+                                       untitled-ontology-4:isWriterOf untitled-ontology-4:Asef_ala_el-Izag ,
+                                                                      untitled-ontology-4:El-Badlah ;
+                                       untitled-ontology-4:hasAge 62 ;
+                                       untitled-ontology-4:hasGender "Male" ;
+                                       untitled-ontology-4:hasName "Ayman Bahgat Kamar" ;
+                                       untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Comedy
+untitled-ontology-4:Comedy rdf:type owl:NamedIndividual ,
+                                    untitled-ontology-4:Genre ;
+                           untitled-ontology-4:genreName "Comedy" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Crime
+untitled-ontology-4:Crime rdf:type owl:NamedIndividual ,
+                                   untitled-ontology-4:Genre ;
+                          untitled-ontology-4:genreName "Crime" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Drama
+untitled-ontology-4:Drama rdf:type owl:NamedIndividual ,
+                                   untitled-ontology-4:Genre ;
+                          untitled-ontology-4:genreName "Drama" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Edward
+untitled-ontology-4:Edward rdf:type owl:NamedIndividual ,
+                                    untitled-ontology-4:Actor ;
+                           untitled-ontology-4:isActorOf untitled-ontology-4:Assal_Eswed ;
+                           untitled-ontology-4:hasAge 50 ;
+                           untitled-ontology-4:hasGender "Male" ;
+                           untitled-ontology-4:hasName "Edward" ;
+                           untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#El-Badlah
+untitled-ontology-4:El-Badlah rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-4:Movie ;
+                              untitled-ontology-4:hasActor untitled-ontology-4:Akram_Hosny ,
+                                                           untitled-ontology-4:Amina_Khalil ,
+                                                           untitled-ontology-4:Tamer_Hosny ;
+                              untitled-ontology-4:hasDirector untitled-ontology-4:Mohamed_Gamal_El-Adl ;
+                              untitled-ontology-4:hasGenre untitled-ontology-4:Comedy ;
+                              untitled-ontology-4:hasWriter untitled-ontology-4:Ayman_Bahgat_Kamar ,
+                                                            untitled-ontology-4:Tamer_Hosny ;
+                              untitled-ontology-4:hasCountry "Egypt" ;
+                              untitled-ontology-4:hasLanguage "Arabic" ;
+                              untitled-ontology-4:hasTitle "El-Badlah" ;
+                              untitled-ontology-4:hasYear 2018 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#El-Gezirah
+untitled-ontology-4:El-Gezirah rdf:type owl:NamedIndividual ,
+                                        untitled-ontology-4:Movie ;
+                               untitled-ontology-4:hasActor untitled-ontology-4:Ahmed_El_Sakka ,
+                                                            untitled-ontology-4:Hind_Sabri ,
+                                                            untitled-ontology-4:Mahmoud_Yassine ;
+                               untitled-ontology-4:hasDirector untitled-ontology-4:Sherif_Arafa ;
+                               untitled-ontology-4:hasGenre untitled-ontology-4:Action ;
+                               untitled-ontology-4:hasWriter untitled-ontology-4:Mohamed_Diab ,
+                                                             untitled-ontology-4:Sherif_Arafa ;
+                               untitled-ontology-4:hasCountry "Egypt" ;
+                               untitled-ontology-4:hasLanguage "Arabic" ;
+                               untitled-ontology-4:hasTitle "El-Gezirah" ;
+                               untitled-ontology-4:hasYear 2007 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#El-Kanz
+untitled-ontology-4:El-Kanz rdf:type owl:NamedIndividual ,
+                                     untitled-ontology-4:Movie ;
+                            untitled-ontology-4:hasActor untitled-ontology-4:Amina_Khalil ,
+                                                         untitled-ontology-4:Hind_Sabri ,
+                                                         untitled-ontology-4:Mohamad_Ramdan ;
+                            untitled-ontology-4:hasDirector untitled-ontology-4:Sherif_Arafa ;
+                            untitled-ontology-4:hasGenre untitled-ontology-4:Drama ;
+                            untitled-ontology-4:hasWriter untitled-ontology-4:Abdel_Rahim_Kamal ,
+                                                          untitled-ontology-4:Sherif_Arafa ;
+                            untitled-ontology-4:hasCountry "Egypt" ;
+                            untitled-ontology-4:hasLanguage "Arabic" ;
+                            untitled-ontology-4:hasTitle "El-Kanz" ;
+                            untitled-ontology-4:hasYear 2017 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Eshtebak
+untitled-ontology-4:Eshtebak rdf:type owl:NamedIndividual ,
+                                      untitled-ontology-4:Movie ;
+                             untitled-ontology-4:hasActor untitled-ontology-4:Hany_Adel ,
+                                                          untitled-ontology-4:Nilli_Karim ;
+                             untitled-ontology-4:hasDirector untitled-ontology-4:Mohamed_Diab ;
+                             untitled-ontology-4:hasGenre untitled-ontology-4:Action ,
+                                                          untitled-ontology-4:Drama ;
+                             untitled-ontology-4:hasWriter untitled-ontology-4:Khaled_Diab ,
+                                                           untitled-ontology-4:Mohamed_Diab ;
+                             untitled-ontology-4:hasCountry "Egypt" ;
+                             untitled-ontology-4:hasLanguage "Arabic" ;
+                             untitled-ontology-4:hasTitle "Eshtebak" ;
+                             untitled-ontology-4:hasYear 2016 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Fares_Bakr
+untitled-ontology-4:Fares_Bakr rdf:type owl:NamedIndividual ,
+                                        untitled-ontology-4:Actor ;
+                               untitled-ontology-4:isActorOf untitled-ontology-4:Asef_ala_el-Izag ;
+                               untitled-ontology-4:hasAge 73 ;
+                               untitled-ontology-4:hasGender "Male" ;
+                               untitled-ontology-4:hasName "Fares Bakr" ;
+                               untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Hadi_El_Bagoury
+untitled-ontology-4:Hadi_El_Bagoury rdf:type owl:NamedIndividual ,
+                                             untitled-ontology-4:Director ;
+                                    untitled-ontology-4:isDirectorOf untitled-ontology-4:Hepta ;
+                                    untitled-ontology-4:hasAge 71 ;
+                                    untitled-ontology-4:hasGender "Male" ;
+                                    untitled-ontology-4:hasName "Hadi El Bagoury" ;
+                                    untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Haitham_Dabbour
+untitled-ontology-4:Haitham_Dabbour rdf:type owl:NamedIndividual ,
+                                             untitled-ontology-4:Writer ;
+                                    untitled-ontology-4:isWriterOf untitled-ontology-4:Photocopy ;
+                                    untitled-ontology-4:hasAge 68 ;
+                                    untitled-ontology-4:hasGender "Male" ;
+                                    untitled-ontology-4:hasName "Haitham Dabbour" ;
+                                    untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Hany_Adel
+untitled-ontology-4:Hany_Adel rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-4:Actor ;
+                              untitled-ontology-4:isActorOf untitled-ontology-4:Eshtebak ;
+                              untitled-ontology-4:hasAge 51 ;
+                              untitled-ontology-4:hasGender "Male" ;
+                              untitled-ontology-4:hasName "Hany Adel" ;
+                              untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Hepta
+untitled-ontology-4:Hepta rdf:type owl:NamedIndividual ,
+                                   untitled-ontology-4:Movie ;
+                          untitled-ontology-4:hasActor untitled-ontology-4:Ahmed_Dawood ,
+                                                       untitled-ontology-4:Ahmed_Malek ,
+                                                       untitled-ontology-4:Amr_Youssef ;
+                          untitled-ontology-4:hasDirector untitled-ontology-4:Hadi_El_Bagoury ;
+                          untitled-ontology-4:hasGenre untitled-ontology-4:Drama ;
+                          untitled-ontology-4:hasWriter untitled-ontology-4:Abdelrahman_Yasser ,
+                                                        untitled-ontology-4:Wael_Hamdy ;
+                          untitled-ontology-4:hasCountry "Egypt" ;
+                          untitled-ontology-4:hasLanguage "Arabic" ;
+                          untitled-ontology-4:hasTitle "Hepta" ;
+                          untitled-ontology-4:hasYear 2016 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Hind_Sabri
+untitled-ontology-4:Hind_Sabri rdf:type owl:NamedIndividual ,
+                                        untitled-ontology-4:Actor ;
+                               untitled-ontology-4:isActorOf untitled-ontology-4:El-Gezirah ,
+                                                             untitled-ontology-4:El-Kanz ;
+                               untitled-ontology-4:hasAge 45 ;
+                               untitled-ontology-4:hasGender "Female" ;
+                               untitled-ontology-4:hasName "Hind Sabri" ;
+                               untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Karim_Abdel_Aziz
+untitled-ontology-4:Karim_Abdel_Aziz rdf:type owl:NamedIndividual ,
+                                              untitled-ontology-4:Actor ;
+                                     untitled-ontology-4:isActorOf untitled-ontology-4:The_Blue_Elephant ;
+                                     untitled-ontology-4:hasAge 49 ;
+                                     untitled-ontology-4:hasGender "Male" ;
+                                     untitled-ontology-4:hasName "Karim Abdel Aziz" ;
+                                     untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Khaled_Diab
+untitled-ontology-4:Khaled_Diab rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Writer ;
+                                untitled-ontology-4:isWriterOf untitled-ontology-4:Assal_Eswed ,
+                                                               untitled-ontology-4:Eshtebak ;
+                                untitled-ontology-4:hasAge 60 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Khaled Diab" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Khaled_El-Sawi
+untitled-ontology-4:Khaled_El-Sawi rdf:type owl:NamedIndividual ,
+                                            untitled-ontology-4:Actor ;
+                                   untitled-ontology-4:isActorOf untitled-ontology-4:The_Blue_Elephant ;
+                                   untitled-ontology-4:hasAge 60 ;
+                                   untitled-ontology-4:hasGender "Male" ;
+                                   untitled-ontology-4:hasName "Khaled El Sawi" ;
+                                   untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Khaled_Marei
+untitled-ontology-4:Khaled_Marei rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Director ;
+                                 untitled-ontology-4:isDirectorOf untitled-ontology-4:Asef_ala_el-Izag ,
+                                                                  untitled-ontology-4:Assal_Eswed ;
+                                 untitled-ontology-4:hasAge 45 ;
+                                 untitled-ontology-4:hasGender "Male" ;
+                                 untitled-ontology-4:hasName "Khaled Marei" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Mahmoud_Hemida
+untitled-ontology-4:Mahmoud_Hemida rdf:type owl:NamedIndividual ,
+                                            untitled-ontology-4:Actor ;
+                                   untitled-ontology-4:isActorOf untitled-ontology-4:Photocopy ;
+                                   untitled-ontology-4:hasAge 60 ;
+                                   untitled-ontology-4:hasGender "Male" ;
+                                   untitled-ontology-4:hasName "Mahmoud Hemida" ;
+                                   untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Mahmoud_Yassine
+untitled-ontology-4:Mahmoud_Yassine rdf:type owl:NamedIndividual ,
+                                             untitled-ontology-4:Actor ;
+                                    untitled-ontology-4:isActorOf untitled-ontology-4:El-Gezirah ;
+                                    untitled-ontology-4:hasAge 80 ;
+                                    untitled-ontology-4:hasGender "Male" ;
+                                    untitled-ontology-4:hasName "Mahmoud Yassine" ;
+                                    untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Marwan_Hamed
+untitled-ontology-4:Marwan_Hamed rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Director ;
+                                 untitled-ontology-4:isDirectorOf untitled-ontology-4:Omaret_yakobean ,
+                                                                  untitled-ontology-4:The_Blue_Elephant ,
+                                                                  untitled-ontology-4:Turab_el-Mas ;
+                                 untitled-ontology-4:hasAge 67 ;
+                                 untitled-ontology-4:hasGender "Male" ;
+                                 untitled-ontology-4:hasName "Marwan Hamed" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Menna_Shalaby
+untitled-ontology-4:Menna_Shalaby rdf:type owl:NamedIndividual ,
+                                           untitled-ontology-4:Actor ;
+                                  untitled-ontology-4:isActorOf untitled-ontology-4:Asef_ala_el-Izag ;
+                                  untitled-ontology-4:hasAge 42 ;
+                                  untitled-ontology-4:hasGender "Female" ;
+                                  untitled-ontology-4:hasName "Menna Shalaby" ;
+                                  untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Mohamad_Ramdan
+untitled-ontology-4:Mohamad_Ramdan rdf:type owl:NamedIndividual ,
+                                            untitled-ontology-4:Actor ;
+                                   untitled-ontology-4:isActorOf untitled-ontology-4:El-Kanz ;
+                                   untitled-ontology-4:hasAge 36 ;
+                                   untitled-ontology-4:hasGender "Male" ;
+                                   untitled-ontology-4:hasName "Mohamed Ramdan" ;
+                                   untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Mohamed_Diab
+untitled-ontology-4:Mohamed_Diab rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Director ,
+                                          untitled-ontology-4:Writer ;
+                                 untitled-ontology-4:isDirectorOf untitled-ontology-4:Eshtebak ;
+                                 untitled-ontology-4:isWriterOf untitled-ontology-4:El-Gezirah ,
+                                                                untitled-ontology-4:Eshtebak ;
+                                 untitled-ontology-4:hasAge 40 ;
+                                 untitled-ontology-4:hasGender "Male" ;
+                                 untitled-ontology-4:hasName "Mohamed Diab" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Mohamed_Gamal_El-Adl
+untitled-ontology-4:Mohamed_Gamal_El-Adl rdf:type owl:NamedIndividual ,
+                                                  untitled-ontology-4:Director ;
+                                         untitled-ontology-4:isDirectorOf untitled-ontology-4:El-Badlah ;
+                                         untitled-ontology-4:hasAge 38 ;
+                                         untitled-ontology-4:hasGender "Male" ;
+                                         untitled-ontology-4:hasName "Mohamed Gamal El Adl" ;
+                                         untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Mohamed_Sadeq
+untitled-ontology-4:Mohamed_Sadeq rdf:type owl:NamedIndividual ,
+                                           untitled-ontology-4:Writer ;
+                                  untitled-ontology-4:isWriterOf untitled-ontology-4:Hepta ;
+                                  untitled-ontology-4:hasAge 35 ;
+                                  untitled-ontology-4:hasGender "Male" ;
+                                  untitled-ontology-4:hasName "Mohamed Sadeq" ;
+                                  untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Nilli_Karim
+untitled-ontology-4:Nilli_Karim rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Actor ;
+                                untitled-ontology-4:isActorOf untitled-ontology-4:Eshtebak ,
+                                                              untitled-ontology-4:The_Blue_Elephant ;
+                                untitled-ontology-4:hasAge 41 ;
+                                untitled-ontology-4:hasGender "Female" ;
+                                untitled-ontology-4:hasName "Nili Karim" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Nour_El-Sherif
+untitled-ontology-4:Nour_El-Sherif rdf:type owl:NamedIndividual ,
+                                            untitled-ontology-4:Actor ;
+                                   untitled-ontology-4:isActorOf untitled-ontology-4:Omaret_yakobean ;
+                                   untitled-ontology-4:hasAge 90 ;
+                                   untitled-ontology-4:hasGender "Male" ;
+                                   untitled-ontology-4:hasName "Nour El-Sherif" ;
+                                   untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Omaret_yakobean
+untitled-ontology-4:Omaret_yakobean rdf:type owl:NamedIndividual ,
+                                             untitled-ontology-4:Movie ;
+                                    untitled-ontology-4:hasActor untitled-ontology-4:Adel_Emam ,
+                                                                 untitled-ontology-4:Nour_El-Sherif ,
+                                                                 untitled-ontology-4:Youssra ;
+                                    untitled-ontology-4:hasDirector untitled-ontology-4:Marwan_Hamed ;
+                                    untitled-ontology-4:hasGenre untitled-ontology-4:Drama ;
+                                    untitled-ontology-4:hasWriter untitled-ontology-4:Alaa_Al-Aswany ,
+                                                                  untitled-ontology-4:Wahid_Hamed ;
+                                    untitled-ontology-4:hasCountry "Egypt" ;
+                                    untitled-ontology-4:hasLanguage "Arabic" ;
+                                    untitled-ontology-4:hasTitle "Omaret yakobean" ;
+                                    untitled-ontology-4:hasYear 2006 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Photocopy
+untitled-ontology-4:Photocopy rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-4:Movie ;
+                              untitled-ontology-4:hasActor untitled-ontology-4:Mahmoud_Hemida ,
+                                                           untitled-ontology-4:Shereen_Reda ;
+                              untitled-ontology-4:hasDirector untitled-ontology-4:Tamer_Ashry ;
+                              untitled-ontology-4:hasGenre untitled-ontology-4:Drama ;
+                              untitled-ontology-4:hasWriter untitled-ontology-4:Haitham_Dabbour ;
+                              untitled-ontology-4:hasCountry "Egypt" ;
+                              untitled-ontology-4:hasLanguage "Arabic" ;
+                              untitled-ontology-4:hasTitle "Photocopy" ;
+                              untitled-ontology-4:hasYear 2017 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Shereen_Reda
+untitled-ontology-4:Shereen_Reda rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Actor ;
+                                 untitled-ontology-4:isActorOf untitled-ontology-4:Photocopy ;
+                                 untitled-ontology-4:hasAge 67 ;
+                                 untitled-ontology-4:hasGender "Female" ;
+                                 untitled-ontology-4:hasName "Shereen Reda" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Sherif_Arafa
+untitled-ontology-4:Sherif_Arafa rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Director ,
+                                          untitled-ontology-4:Writer ;
+                                 untitled-ontology-4:isDirectorOf untitled-ontology-4:El-Gezirah ,
+                                                                  untitled-ontology-4:El-Kanz ;
+                                 untitled-ontology-4:isWriterOf untitled-ontology-4:El-Gezirah ,
+                                                                untitled-ontology-4:El-Kanz ;
+                                 untitled-ontology-4:hasAge 57 ;
+                                 untitled-ontology-4:hasGender "Male" ;
+                                 untitled-ontology-4:hasName "Sherif Arafa" ;
+                                 untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Tamer_Ashry
+untitled-ontology-4:Tamer_Ashry rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Director ;
+                                untitled-ontology-4:isDirectorOf untitled-ontology-4:Photocopy ;
+                                untitled-ontology-4:hasAge 78 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Tamer Ashry" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Tamer_Hosny
+untitled-ontology-4:Tamer_Hosny rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Actor ,
+                                         untitled-ontology-4:Writer ;
+                                untitled-ontology-4:isActorOf untitled-ontology-4:El-Badlah ;
+                                untitled-ontology-4:isWriterOf untitled-ontology-4:El-Badlah ;
+                                untitled-ontology-4:hasAge 48 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Tamer Hosny" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Tara_Emad
+untitled-ontology-4:Tara_Emad rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-4:Actor ;
+                              untitled-ontology-4:isActorOf untitled-ontology-4:Turab_el-Mas ;
+                              untitled-ontology-4:hasAge 32 ;
+                              untitled-ontology-4:hasGender "Female" ;
+                              untitled-ontology-4:hasName "Tara Emad" ;
+                              untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#The_Blue_Elephant
+untitled-ontology-4:The_Blue_Elephant rdf:type owl:NamedIndividual ,
+                                               untitled-ontology-4:Movie ;
+                                      untitled-ontology-4:hasActor untitled-ontology-4:Karim_Abdel_Aziz ,
+                                                                   untitled-ontology-4:Khaled_El-Sawi ,
+                                                                   untitled-ontology-4:Nilli_Karim ;
+                                      untitled-ontology-4:hasDirector untitled-ontology-4:Marwan_Hamed ;
+                                      untitled-ontology-4:hasGenre untitled-ontology-4:Action ;
+                                      untitled-ontology-4:hasWriter untitled-ontology-4:Ahmed_Mourad ;
+                                      untitled-ontology-4:hasCountry "Egypt" ;
+                                      untitled-ontology-4:hasLanguage "Arabic" ;
+                                      untitled-ontology-4:hasTitle "The Blue Elephant" ;
+                                      untitled-ontology-4:hasYear 2014 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Thriller
+untitled-ontology-4:Thriller rdf:type owl:NamedIndividual ,
+                                      untitled-ontology-4:Genre ;
+                             untitled-ontology-4:genreName "Thriller" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Turab_el-Mas
+untitled-ontology-4:Turab_el-Mas rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-4:Movie ;
+                                 untitled-ontology-4:hasActor untitled-ontology-4:Asser_Yassin ,
+                                                              untitled-ontology-4:Tara_Emad ;
+                                 untitled-ontology-4:hasDirector untitled-ontology-4:Marwan_Hamed ;
+                                 untitled-ontology-4:hasGenre untitled-ontology-4:Drama ;
+                                 untitled-ontology-4:hasWriter untitled-ontology-4:Ahmed_Mourad ;
+                                 untitled-ontology-4:hasCountry "Egypt" ;
+                                 untitled-ontology-4:hasLanguage "Arabic" ;
+                                 untitled-ontology-4:hasTitle "Turab el-Mas" ;
+                                 untitled-ontology-4:hasYear 2018 .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Wael_Hamdy
+untitled-ontology-4:Wael_Hamdy rdf:type owl:NamedIndividual ,
+                                        untitled-ontology-4:Writer ;
+                               untitled-ontology-4:isWriterOf untitled-ontology-4:Hepta ;
+                               untitled-ontology-4:hasAge 55 ;
+                               untitled-ontology-4:hasGender "Male" ;
+                               untitled-ontology-4:hasName "Wael Hamdy" ;
+                               untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Wahid_Hamed
+untitled-ontology-4:Wahid_Hamed rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-4:Writer ;
+                                untitled-ontology-4:isWriterOf untitled-ontology-4:Omaret_yakobean ;
+                                untitled-ontology-4:hasAge 72 ;
+                                untitled-ontology-4:hasGender "Male" ;
+                                untitled-ontology-4:hasName "Wahid Hamed" ;
+                                untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2024/3/untitled-ontology-4#Youssra
+untitled-ontology-4:Youssra rdf:type owl:NamedIndividual ,
+                                     untitled-ontology-4:Actor ;
+                            untitled-ontology-4:isActorOf untitled-ontology-4:Omaret_yakobean ;
+                            untitled-ontology-4:hasAge 73 ;
+                            untitled-ontology-4:hasGender "Female" ;
+                            untitled-ontology-4:hasName "Youssra" ;
+                            untitled-ontology-4:hasNationality "Egyptian" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
